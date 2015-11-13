@@ -437,6 +437,7 @@ def Actions(token,xml_server,args,content):
 
     except xmlrpclib.Fault as err:
         print(("Error: %d: %s") % (err.faultCode, err.faultString))
+        return 1
 
 def main():
     args = Parser()
